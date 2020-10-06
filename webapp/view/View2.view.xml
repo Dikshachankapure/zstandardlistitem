@@ -1,0 +1,57 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form"
+	controllerName="standardlistitems.z_StandardList.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title" showNavButton="true" navButtonPress="Gotopage1">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3"
+							labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1"
+							columnsL="1" columnsM="1" singleContainerFullSize="false">
+							<f:content>
+								<Label text="CustomerID"/>
+								<Input id="custId"/>
+								<Label text="CompanyName"/>
+								<Input id="Cname"></Input>
+								<Label text="ContactName"/>
+								<Input id="ContactName"/>
+								<Label text="ContactTitle"/>
+								<Input id="CTitle"/>
+								<Label text="Address"/>
+								<Input id="aadr"/>
+								<Label text="City"/>
+								<Input id="City1"/>
+								<Label text="Region"/>
+								<Input id="rg1"/>
+								<Label text="PostalCode"/>
+								<Input id="postcd"/>
+								<Label text="Country"/>
+								<Select id="country">
+									<items>
+										<core:Item text="England" key="England"/>
+										<core:Item text="Germany" key="Germany"/>
+										<core:Item text="USA" key="USA"/>
+									</items>
+								</Select>
+								<Label text="Phone"/>
+								<Input id="ph1"/>
+								<Label text="Fax"/>
+								<Input id="fax1"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+				
+				<footer>
+					<Bar>
+						<contentRight>
+							<Button text="Save"  press="onCreate"/>
+							<Button text="Delete" press="onDelete"/>
+							
+						</contentRight>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
